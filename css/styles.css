@@ -1,0 +1,112 @@
+/* {
+    border: 1px solid red; 
+}*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/media/fonts/Norse-Bold.otf);
+  }
+  
+
+* body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: grid;
+    height: 100vh ;
+    width: 100%;
+}
+.left{
+    width: 40%;
+
+}
+.right{
+    background-color: whitesmoke;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 20px;
+}
+
+.form form{
+    display: grid;
+    row-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+.form input{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.form label{
+    width: 200px;
+    height: auto;
+
+}
+
+input:invalid {
+    border-color: red;
+  }
+  
+input:valid {
+    border-color: green;
+  }
+
+.banner {
+      background-color:rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 25%;
+      left: 0; 
+      width: 40%;
+      height: 15%;
+      font-family: myFirstFont;
+      color: white;
+  }
+
+.title{
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+}
+.title img{
+    width: 12%;
+    height: auto;
+}
+
+.action button{
+    background-color: #35531a;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 11px;
+    margin: 20px;
+    border: #35531a;
+ 
+
+}
+
+input:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border: 20%;
+  }
