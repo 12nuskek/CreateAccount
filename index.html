@@ -56,7 +56,10 @@
 
                       <div>
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="confirmpassword" name="confirmpassword" id="confirmpassword" required>
+                        <input type="confirmpassword" name="confirmpassword" id="confirmpassword" onblur="passwordcheck()" required>
+                      </div>
+                      <div class="passwordwrong" id="passwordwrong">
+                          Your password is incorrect. To continue please ensure both passwords are the same.
                       </div>
 
                       
@@ -71,5 +74,5 @@
     </div>
 
 </body>
-<script src="js/script.js"></script>
+<script src="js/scripts.js"></script>
 </html>
